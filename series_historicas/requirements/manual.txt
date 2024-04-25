@@ -1,0 +1,22 @@
+# Comandos para criar o ambiente virtual manualmente
+
+1) Verifica os ambientes existentes e remove o ambiente se ele já existir
+		
+conda info --envs
+conda remove --name envb3 --all
+	
+2) Cria novo ambiente
+		
+conda create --name envb3 python=3.9
+conda activate envb3
+pip install jupyter
+pip install ipykernel
+pip install pandas
+pip install ydata-profiling
+pip install openpyxl
+	
+Local de instalação do ambiente: C:\Users\usuario\anaconda3\envs
+		
+3) Gerar arquivo de requirements
+		
+conda list -n envb3 --export > C:\repos\b3\series_historicas\requirements\requirements.txt
